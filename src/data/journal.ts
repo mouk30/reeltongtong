@@ -29,7 +29,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     modifiedDate: "2026-03-20",
     readTime: "8분 독서",
     category: "제도·역사 분석",
-    coverImage: "/src/assets/images/game_sea_story_retro_1792546289255.jpg",
+    coverImage: "/images/game_sea_story_retro_1792546289255.jpg",
     leadParagraph: "2006년 여름 대한민국 사회를 뒤흔들었던 '바다이야기 사태'는 한국 게임 산업 정책과 대중문화 지형에 지울 수 없는 이정표를 남겼습니다. 단순한 게임기 논란을 넘어 상품권 환전제도의 허점, 불법 기판 변조, 그리고 행정 심의 기구의 전면적 개편으로 이어진 20년의 궤적을 짚어봅니다.",
     tableOfContents: [
       "1. 경품용 상품권 제도와 사행성의 결합",
@@ -86,7 +86,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     modifiedDate: "2026-03-12",
     readTime: "6분 독서",
     category: "알고리즘·시스템 분석",
-    coverImage: "/src/assets/images/hero_tong_editorial_1792546288290.jpg",
+    coverImage: "/images/game_yamato_retro_1792546288783.jpg",
     leadParagraph: "릴게임 이용자들 사이에서 가장 널리 퍼져 있던 통념 중 하나는 '기계에 돈이 많이 들어갔으니 이제 곧 터질 때가 되었다'는 믿음이었습니다. 확률 통계학과 알고리즘 공학의 관점에서 난수생성기(RNG)의 진실을 규명합니다.",
     tableOfContents: [
       "1. 독립 사건(Independent Event)과 주기의 진실",
@@ -134,7 +134,7 @@ export const JOURNAL_ARTICLES: JournalArticle[] = [
     modifiedDate: "2026-03-05",
     readTime: "5분 독서",
     category: "문화·미학 비평",
-    coverImage: "/src/assets/images/hero_tong_editorial_1792546288290.jpg",
+    coverImage: "/images/hero_tong_editorial_1792546288290.jpg",
     leadParagraph: "산요의 파칭코에서 시작된 해양 테마가 왜 한국 성인오락실에서 유독 '고래'와 '갈메기', 그리고 '바다'라는 거대한 상징으로 변용되어 대중을 사로잡았는지 시각문화론적 시선으로 고찰합니다.",
     tableOfContents: [
       "1. 심해의 수평선이 주는 공간적 보상",

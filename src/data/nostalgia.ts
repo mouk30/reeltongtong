@@ -20,7 +20,7 @@ export const NOSTALGIA_ARCHIVE: NostalgiaStory[] = [
     readTime: "7분 분량",
     author: "릴게임 TONG 편집국 아카이브팀",
     summary: "동전 100원을 쥐고 찾던 방과 후의 골목 오락실이 어떻게 2000년대 중반 번화가의 성인 전용 게임장으로 변모해갔는지를 사료와 기억을 통해 추적합니다.",
-    image: "/src/assets/images/arcade_nostalgia_2000s_1792546289886.jpg",
+    image: "/images/arcade_nostalgia_2000s_1792546289886.jpg",
     caption: "Fig. 1 — 2000년대 초반 아케이드 게임 센터 전경. CRT 모니터의 푸른 빛과 기계음이 가득했던 풍경.",
     content: [
       "1990년대 초중반 대한민국의 골목길마다 자리 잡고 있던 동네 오락실(전자오락실)은 어린이와 청소년들의 해방구이자 대중문화의 산실이었습니다. 스트리트 파이터, 철권, 킹 오브 파이터즈와 같은 대전 격투 게임과 보글보글, 원더보이 같은 클래식 명작들이 브라운관 모니터의 지직거리는 주파수 소리와 함께 공존하던 시기였습니다.",
@@ -37,7 +37,7 @@ export const NOSTALGIA_ARCHIVE: NostalgiaStory[] = [
     readTime: "5분 분량",
     author: "문화기록 연구원",
     summary: "릴게임의 핵심은 시각 연출 못지않게 고출력 사운드 시스템에 있었습니다. 플레이어의 심장을 뛰게 만들었던 음향 설계의 특징을 분석합니다.",
-    image: "/src/assets/images/game_yamato_retro_1792546288783.jpg",
+    image: "/images/game_yamato_retro_1792546288783.jpg",
     caption: "Fig. 2 — 강력한 앰프와 스피커가 탑재되었던 당시 아케이드 기판의 청각적 흡입력.",
     content: [
       "2005년 전후 성인오락실 문을 열고 들어섰을 때 가장 먼저 방문객을 압도했던 것은 시각보다 '소리'였습니다. '바다이야기'의 청명한 물방울 터지는 소리 뒤로 이어지는 묵직한 고래 울음소리, '야마토'의 웅장한 오케스트라풍 BGM과 파동포 충전음은 100여 대의 기계에서 동시다발적으로 울려 퍼지며 독특한 청각적 최면 상태를 유도했습니다.",

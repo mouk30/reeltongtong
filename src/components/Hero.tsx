@@ -11,7 +11,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
       {/* Background Archival Photography with subtle contrast scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_tong_editorial_1792546288290.jpg"
+          src="/images/hero_tong_editorial_1792546288290.jpg"
           alt="바다의 수평선 위 갈메기와 심해의 고래를 형상화한 TONG 에디토리얼 비주얼"
           className="w-full h-full object-cover object-center opacity-45 mix-blend-luminosity scale-105 transition-transform duration-1000 ease-out"
           referrerPolicy="no-referrer"

@@ -27,7 +27,7 @@ export const NostalgiaSection: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             <div className="aspect-16/9 rounded-lg overflow-hidden bg-[#102638] border border-[#DFE5E4] relative group">
               <img
-                src="/src/assets/images/arcade_nostalgia_2000s_1792546289886.jpg"
+                src="/images/arcade_nostalgia_2000s_1792546289886.jpg"
                 alt="2000년대 초반 아케이드 게임장 아카이브 사진"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-102"
                 referrerPolicy="no-referrer"
