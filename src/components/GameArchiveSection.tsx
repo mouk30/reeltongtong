@@ -1,56 +1,59 @@
 import React, { useState } from "react";
 import { GAMES_ARCHIVE, GameRecord } from "../data/games";
 import { GameDetailModal } from "./GameDetailModal";
-import { ShieldCheck, ArrowRight, Compass } from "lucide-react";
+import { Play, Info, Sparkles, Check, TrendingUp, Coins, ExternalLink } from "lucide-react";
 
 export const GameArchiveSection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [activeGame, setActiveGame] = useState<GameRecord | null>(null);
 
   const categories = [
-    { id: "all", label: "전체 기종 (7)" },
-    { id: "해양", label: "해양 테마" },
+    { id: "all", label: "전체 기종 (6)" },
+    { id: "바다", label: "바다 시리즈" },
+    { id: "정통", label: "정통 릴게임" },
     { id: "SF", label: "SF 우주 테마" },
-    { id: "동양", label: "동양 판타지/천계" },
-    { id: "서양", label: "서양/미스터리" },
+    { id: "정글", label: "정글 / 맹수" },
+    { id: "판타지", label: "동양 판타지" },
   ];
 
   const filteredGames = GAMES_ARCHIVE.filter((game) => {
     if (selectedCategory === "all") return true;
-    if (selectedCategory === "해양") return game.category.includes("해양");
+    if (selectedCategory === "바다") return game.category.includes("바다");
+    if (selectedCategory === "정통") return game.category.includes("정통");
     if (selectedCategory === "SF") return game.category.includes("SF");
-    if (selectedCategory === "동양") return game.category.includes("동양");
-    if (selectedCategory === "서양") return game.category.includes("서양") || game.category.includes("르네상스");
+    if (selectedCategory === "정글") return game.category.includes("정글");
+    if (selectedCategory === "판타지") return game.category.includes("동양");
     return true;
   });
 
   return (
-    <section id="games" className="py-20 md:py-28 bg-[#F6F5F0] border-b border-[#DFE5E4]">
+    <section id="games" className="py-20 md:py-28 bg-[#07111D] text-white border-b border-[#122234]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
-          <div className="text-xs uppercase tracking-widest text-[#426E7C] font-semibold mb-2">
-            PILLAR 02 — THE SEVEN CORE REEL GAMES
+          <div className="text-xs uppercase tracking-widest text-[#C7B38A] font-semibold mb-2 flex items-center gap-2">
+            <Sparkles className="w-4 h-4 text-[#FF9E1B]" />
+            <span>PILLAR 02 — THE SIX CORE REEL GAMES</span>
           </div>
-          <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-medium text-[#102638] tracking-tight mb-4">
-            게임별 이야기: 시대의 파도를 넘은 7대 기종
+          <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-medium text-white tracking-tight mb-4">
+            게임별 이야기: 시대의 파도를 넘은 6대 기종
           </h2>
-          <p className="text-base text-[#65747B] leading-relaxed">
-            바다이야기, 야마토, 손오공, 오션파라다이스, 황금성, 신천지, 다빈치.
-            개발 배경부터 당대 오락실 문화와 규제 전말까지 체계적으로 검증된 사료를 공개합니다.
+          <p className="text-base text-[#94A3B8] leading-relaxed">
+            바다이야기, 황금성, 오션파라다이스, 야마토, 손오공, 정글북 자연빵.
+            당대 오락실을 뒤흔든 6대 전설적 기종의 아케이드 비주얼과 사료 백서를 제공합니다.
           </p>
         </div>
 
         {/* Category Filter Controls */}
-        <div className="flex flex-wrap items-center gap-2 mb-10">
+        <div className="flex flex-wrap items-center gap-2.5 mb-10">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`px-3.5 py-1.5 text-xs font-medium rounded-md transition-colors cursor-pointer ${
+              className={`px-4 py-2 text-xs font-semibold rounded-lg transition-all cursor-pointer ${
                 selectedCategory === cat.id
-                  ? "bg-[#102638] text-white shadow-xs"
-                  : "bg-white text-[#65747B] border border-[#DFE5E4] hover:text-[#102638] hover:border-[#65747B]"
+                  ? "bg-gradient-to-r from-[#FF7A00] to-[#FFA800] text-white shadow-md shadow-orange-500/20"
+                  : "bg-[#0E1B2C] text-[#94A3B8] border border-[#1E3048] hover:text-white hover:border-[#385375]"
               }`}
             >
               {cat.label}
@@ -58,77 +61,139 @@ export const GameArchiveSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Games Grid - 12 Columns, High-Fidelity Asymmetric & Editorial Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredGames.map((game, idx) => (
+        {/* Games Grid - Matching the exact style of the uploaded reference image */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          {filteredGames.map((game) => (
             <article
               key={game.id}
-              onClick={() => setActiveGame(game)}
-              className="bg-white border border-[#DFE5E4] rounded-lg overflow-hidden group cursor-pointer hover:border-[#426E7C] transition-all flex flex-col justify-between shadow-2xs"
+              className="bg-[#0B1523] border border-[#1C2C42] rounded-2xl p-4.5 transition-all duration-300 hover:border-[#395A85] hover:shadow-xl hover:shadow-black/60 flex flex-col justify-between group"
             >
               <div>
-                {/* Visual Header */}
-                <div className="relative aspect-4/3 overflow-hidden bg-[#102638]">
+                {/* Top Badge & Live Stats Strip */}
+                <div className="flex items-center justify-between text-xs pb-3 mb-3 border-b border-[#16253B]">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-bold text-[#FFB020] bg-[#FFB020]/10 px-2 py-0.5 rounded-sm border border-[#FFB020]/30">
+                      {game.rankBadge}
+                    </span>
+                    <span className="flex items-center gap-1.5 text-[11px] text-[#94A3B8]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
+                      {game.liveStats}
+                    </span>
+                  </div>
+
+                  <span className="text-[11px] font-bold text-[#38BDF8] bg-[#0284C7]/20 px-2.5 py-0.5 rounded-full border border-[#38BDF8]/40">
+                    {game.statusBadge}
+                  </span>
+                </div>
+
+                {/* Huge Eye-Catching Arcade Art Image */}
+                <div
+                  onClick={() => setActiveGame(game)}
+                  className="relative aspect-square w-full rounded-xl overflow-hidden bg-[#060D17] border border-[#1F334E] cursor-pointer group-hover:border-[#FF9E1B]/60 transition-colors shadow-inner"
+                >
                   <img
                     src={game.image}
-                    alt={`${game.name} 기종 사료 이미지`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-103"
+                    alt={`${game.name} 아케이드 포스터 비주얼`}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-3 left-3 bg-[#102638]/90 text-white text-[11px] px-2.5 py-0.5 font-medium rounded-xs">
-                    0{idx + 1} · {game.category}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity" />
+                  
+                  {/* Subtle Hover overlay prompt */}
+                  <div className="absolute bottom-2.5 right-2.5 bg-black/70 backdrop-blur-xs text-[#FFB020] text-[10px] font-semibold px-2 py-0.5 rounded-sm border border-[#FFB020]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
+                    <span>사료 백서 열람</span>
+                    <ExternalLink className="w-2.5 h-2.5" />
                   </div>
                 </div>
 
-                <div className="p-6">
-                  {/* Zero-pill metadata line */}
-                  <div className="flex items-center gap-2 text-xs text-[#65747B] mb-2 font-mono">
-                    <span>{game.releaseYear.split(" ")[0]}</span>
-                    <span aria-hidden="true">·</span>
-                    <span>{game.developer.includes("미확인") ? "개발사 미확인" : "사료 확인 완료"}</span>
+                {/* Title & RTP Badge */}
+                <div className="pt-4 pb-2">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="font-editorial text-2xl font-bold text-white tracking-tight group-hover:text-[#FFB020] transition-colors">
+                      {game.name}
+                    </h3>
+                    <span className="shrink-0 text-xs font-mono font-bold text-[#FFB020] bg-[#FFB020]/10 px-2 py-0.5 rounded-sm border border-[#FFB020]/40">
+                      RTP {game.rtpRate}
+                    </span>
                   </div>
 
-                  <h3 className="font-editorial text-2xl font-bold text-[#102638] group-hover:text-[#426E7C] transition-colors mb-2">
-                    {game.name}
-                  </h3>
+                  {/* Golden Subtitle */}
+                  <div className="text-xs font-semibold text-[#FBBF24] mt-1 leading-snug line-clamp-1">
+                    {game.subtitleGold}
+                  </div>
 
-                  <p className="text-xs text-[#426E7C] font-serif italic mb-3">
-                    {game.subName}
-                  </p>
-
-                  <p className="text-xs sm:text-sm text-[#65747B] leading-relaxed line-clamp-3 mb-4">
+                  {/* 2-line Description */}
+                  <p className="text-xs text-[#94A3B8] leading-relaxed line-clamp-2 mt-2">
                     {game.verifiedFact}
                   </p>
+                </div>
 
-                  <div className="p-3 bg-[#F6F5F0] rounded-sm text-xs space-y-1.5 text-[#192229]">
-                    <div className="font-semibold text-[#102638] flex items-center gap-1.5">
-                      <Compass className="w-3.5 h-3.5 text-[#426E7C]" />
-                      <span>핵심 연출 기법</span>
-                    </div>
-                    <div className="text-[#65747B] line-clamp-2">
-                      {game.comparison.featureEvent}
-                    </div>
+                {/* Key Metrics Strip (Jackpot & Volatility) */}
+                <div className="py-2.5 px-3 bg-[#08101C] rounded-lg border border-[#16263D] mb-3 text-xs space-y-1.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[#94A3B8] flex items-center gap-1 text-[11px]">
+                      <Coins className="w-3.5 h-3.5 text-[#FFB020]" />
+                      누적 잭팟:
+                    </span>
+                    <span className="font-mono font-bold text-[#FFB020] text-sm tracking-tight">
+                      {game.jackpotAmount}
+                    </span>
                   </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[#94A3B8] flex items-center gap-1 text-[11px]">
+                      <TrendingUp className="w-3.5 h-3.5 text-[#38BDF8]" />
+                      변동성 지수:
+                    </span>
+                    <span className="font-semibold text-white text-[11px]">
+                      {game.volatility}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Feature Bullet Tags (Checkmarks) */}
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {game.featurePills.map((pill, pIdx) => (
+                    <span
+                      key={pIdx}
+                      className="text-[11px] text-[#CBD5E1] bg-[#0E1C2E] border border-[#1C324D] px-2.5 py-1 rounded-sm flex items-center gap-1"
+                    >
+                      <Check className="w-3 h-3 text-[#10B981] shrink-0" />
+                      <span>{pill}</span>
+                    </span>
+                  ))}
                 </div>
               </div>
 
-              {/* Card Footer */}
-              <div className="px-6 py-4 bg-white border-t border-[#DFE5E4] flex items-center justify-between text-xs">
-                <div className="flex items-center gap-1.5 text-[#426E7C] font-medium">
-                  <ShieldCheck className="w-3.5 h-3.5" />
-                  <span>사료 검증 문서</span>
-                </div>
-                <div className="flex items-center gap-1 text-[#102638] font-semibold group-hover:text-[#426E7C] transition-colors">
-                  <span>자세히 보기</span>
-                  <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-                </div>
+              {/* Bottom Action Buttons: Prominent Orange CTA & Secondary Research Button */}
+              <div className="grid grid-cols-2 gap-2.5 pt-3 border-t border-[#16253B]">
+                {/* Big prominent Orange "사이트 바로가기" Link Button */}
+                <a
+                  href={game.siteUrl || "https://reelkings.kr"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3 px-3 bg-gradient-to-r from-[#FF7A00] via-[#FF8A00] to-[#FFA800] hover:from-[#FF8A00] hover:to-[#FFB820] text-white font-bold text-xs sm:text-sm rounded-lg transition-all shadow-md shadow-orange-500/30 flex items-center justify-center gap-1.5 cursor-pointer active:scale-98 text-center"
+                  aria-label={`${game.name} 사이트 바로가기`}
+                >
+                  <Play className="w-4 h-4 fill-white text-white shrink-0" />
+                  <span className="whitespace-nowrap tracking-wide">사이트 바로가기</span>
+                </a>
+
+                {/* Secondary Dark "상세 / 공학" Button */}
+                <button
+                  onClick={() => setActiveGame(game)}
+                  className="w-full py-3 px-3 bg-[#132235] hover:bg-[#1A2E47] border border-[#233B5A] text-[#CBD5E1] hover:text-white font-semibold text-xs sm:text-sm rounded-lg transition-colors flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
+                  aria-label={`${game.name} 상세 정보 및 공학 분석`}
+                >
+                  <Info className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  <span className="whitespace-nowrap">상세 / 공학</span>
+                </button>
               </div>
             </article>
           ))}
         </div>
       </div>
 
-      {/* Deep-Dive Archival Dossier Modal */}
+      {/* Detailed Archival Modal */}
       <GameDetailModal game={activeGame} onClose={() => setActiveGame(null)} />
     </section>
   );

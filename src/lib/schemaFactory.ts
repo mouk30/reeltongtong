@@ -31,8 +31,7 @@ export function generateOrganizationSchema() {
       "손오공",
       "오션파라다이스",
       "황금성",
-      "신천지",
-      "다빈치",
+      "정글북 자연빵",
       "아케이드 게임 문화",
       "게임산업진흥법"
     ]

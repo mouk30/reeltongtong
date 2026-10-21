@@ -20,8 +20,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, activeSection }) =
 
   const navLinks = [
     { label: "홈", href: "#" },
-    { label: "릴게임 백과", href: "#encyclopedia" },
     { label: "게임별 이야기", href: "#games" },
+    { label: "릴게임 백과", href: "#encyclopedia" },
     { label: "추억 아카이브", href: "#nostalgia" },
     { label: "정보와 법률", href: "#legal-guide" },
     { label: "매거진", href: "#journal" },

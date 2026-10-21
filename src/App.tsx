@@ -56,7 +56,7 @@ export default function App() {
       { threshold: 0.25 }
     );
 
-    const sectionIds = ["encyclopedia", "games", "nostalgia", "legal-guide", "journal", "about"];
+    const sectionIds = ["games", "encyclopedia", "nostalgia", "legal-guide", "journal", "about"];
     sectionIds.forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
@@ -83,9 +83,9 @@ export default function App() {
       {/* Main Content Areas */}
       <main className="flex-1">
         <Hero onExploreClick={handleScrollToEncyclopedia} />
+        <GameArchiveSection />
         <FeaturedStory onSelectArticle={(article) => setSelectedArticle(article)} />
         <EncyclopediaSection />
-        <GameArchiveSection />
         <NostalgiaSection />
         <JournalSection onSelectArticle={(article) => setSelectedArticle(article)} />
         <LegalGuideSection />

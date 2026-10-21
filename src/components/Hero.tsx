@@ -58,7 +58,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
               className="px-6 py-3.5 text-sm font-medium text-[#F6F5F0] bg-[#102638]/80 hover:bg-[#102638] border border-[#426E7C]/40 rounded-md transition-colors flex items-center gap-2"
             >
               <Compass className="w-4 h-4 text-[#C7B38A]" />
-              <span>대표 기종 7선 아카이브</span>
+              <span>대표 기종 6선 아카이브</span>
             </a>
           </div>
         </div>

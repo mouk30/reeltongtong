@@ -127,14 +127,25 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({ game, onClose 
         </div>
 
         {/* Footer */}
-        <div className="bg-[#F6F5F0] px-6 py-3 border-t border-[#DFE5E4] flex items-center justify-between text-xs text-[#65747B] shrink-0">
-          <span>출처: 문화관광부 심의자료 및 국회 국정감사 백서</span>
-          <button
-            onClick={onClose}
-            className="px-4 py-2 bg-[#102638] text-white rounded-md text-xs font-medium hover:bg-[#426E7C] transition-colors"
-          >
-            닫기
-          </button>
+        <div className="bg-[#F6F5F0] px-6 py-3.5 border-t border-[#DFE5E4] flex items-center justify-between gap-3 text-xs text-[#65747B] shrink-0">
+          <span className="hidden sm:inline">출처: 문화관광부 심의자료 및 국회 국정감사 백서</span>
+          <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+            <button
+              onClick={onClose}
+              className="px-4 py-2.5 bg-white border border-[#DFE5E4] text-[#102638] rounded-md text-xs font-semibold hover:bg-[#F6F5F0] transition-colors"
+            >
+              창 닫기
+            </button>
+            <a
+              href={game.siteUrl || "https://reelkings.kr"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 bg-gradient-to-r from-[#FF7A00] via-[#FF8A00] to-[#FFA800] hover:brightness-110 text-white rounded-md text-xs font-bold transition-all shadow-md shadow-orange-500/20 flex items-center gap-1.5 cursor-pointer text-center"
+              aria-label={`${game.name} 사이트 바로가기`}
+            >
+              <span>▶ 사이트 바로가기</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
