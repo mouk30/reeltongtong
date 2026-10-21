@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Elegant minimalist oceanic mark: Seagull wing soaring above whale fluke wave -->
+  <defs>
+    <linearGradient id="tongGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#426E7C"/>
+      <stop offset="60%" stop-color="#102638"/>
+      <stop offset="100%" stop-color="#0B1928"/>
+    </linearGradient>
+    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2D4B7"/>
+      <stop offset="100%" stop-color="#C7B38A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Soaring Seagull Wing Curve (Top) -->
+  <path d="M18 42 C 34 22, 58 26, 82 18 C 68 32, 50 36, 36 38 C 28 39, 22 41, 18 42 Z" fill="url(#goldAcc)"/>
+  
+  <!-- Whale Fluke & Wave Sweep (Bottom) -->
+  <path d="M12 70 C 26 50, 48 54, 52 46 C 54 42, 50 36, 44 34 C 62 38, 76 54, 88 48 C 80 66, 58 74, 38 72 C 26 71, 18 73, 12 70 Z" fill="url(#tongGrad)"/>
+
+  <!-- Minimal Core Arc connecting harmony -->
+  <path d="M38 52 C 48 46, 56 48, 64 56 C 54 58, 46 56, 38 52 Z" fill="#426E7C" opacity="0.65"/>
+</svg>

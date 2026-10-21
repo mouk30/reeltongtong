@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+  <!-- Symbol Center -->
+  <g transform="translate(70, 10) scale(1)">
+    <path d="M18 42 C 34 22, 58 26, 82 18 C 68 32, 50 36, 36 38 C 28 39, 22 41, 18 42 Z" fill="#C7B38A"/>
+    <path d="M12 70 C 26 50, 48 54, 52 46 C 54 42, 50 36, 44 34 C 62 38, 76 54, 88 48 C 80 66, 58 74, 38 72 C 26 71, 18 73, 12 70 Z" fill="#102638"/>
+    <path d="M38 52 C 48 46, 56 48, 64 56 C 54 58, 46 56, 38 52 Z" fill="#426E7C"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="120" y="120" text-anchor="middle" font-family="'Cormorant Garamond', 'Noto Serif KR', serif" font-weight="700" font-size="32" letter-spacing="4" fill="#102638">TONG</text>
+  <text x="120" y="142" text-anchor="middle" font-family="'Noto Sans KR', sans-serif" font-weight="600" font-size="14" letter-spacing="1" fill="#102638">릴게임 TONG</text>
+  <text x="120" y="160" text-anchor="middle" font-family="'Noto Serif KR', serif" font-weight="500" font-size="13" letter-spacing="0.5" fill="#426E7C">갈메기와 고래</text>
+</svg>

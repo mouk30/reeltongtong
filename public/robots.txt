@@ -1,0 +1,13 @@
+# robots.txt for 릴게임 TONG | 갈메기와 고래
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Googlebot specific settings
+User-agent: Googlebot
+Allow: /
+Allow: /src/assets/images/
+
+# Sitemap location
+Sitemap: https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/sitemap.xml

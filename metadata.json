@@ -1,0 +1,8 @@
+{
+  "name": "릴게임 TONG | 갈메기와 고래",
+  "description": "릴게임 TONG 갈메기와 고래. 바다이야기, 야마토, 손오공, 오션파라다이스, 황금성 등 릴게임의 역사와 특징, 오락실 문화와 관련 정보를 정리한 전문 아카이브.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
