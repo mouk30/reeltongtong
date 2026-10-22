@@ -1,81 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1 
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+  <!-- 1. Home / Root Page with Main Visual & Golden Seagull Emblem -->
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/icons/og-tong-cover.png</image:loc>
+      <image:title>릴게임 TONG 갈메기와 고래 — 6대 기종 사료 백서 대표 커버</image:title>
+      <image:caption>바다이야기, 황금성, 오션파라다이스, 야마토, 손오공, 정글북 자연빵 아카이브</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/icons/golden-seagull.svg</image:loc>
+      <image:title>릴게임 TONG 황금갈메기 공식 엠블럼</image:title>
+      <image:caption>해양 파도와 비상하는 황금갈메기 심벌</image:caption>
+    </image:image>
   </url>
-  <url>
-    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#encyclopedia</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+
+  <!-- 2. Games Archive Section with 6 Core Game Posters -->
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#games</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/assets/aistudio/______b9852f14.webp</image:loc>
+      <image:title>바다이야기 대왕고래 아케이드 비주얼 사료</image:title>
+      <image:caption>2000년대 중반 전국 오락실을 뒤흔든 바다이야기 대왕고래와 황금 용궁 연출</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/assets/aistudio/____bbf27f7f.webp</image:loc>
+      <image:title>황금성릴게임 용가리 비상 아케이드 비주얼</image:title>
+      <image:caption>천상 궁궐과 황금 용가리 승천, 황금열쇠 3중 보너스 정통 릴게임</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/assets/aistudio/________908022f3.webp</image:loc>
+      <image:title>오션파라다이스 대왕상어 아케이드 비주얼</image:title>
+      <image:caption>대왕상어 5연속 포효 경보와 트로피컬 와일드 산호초 프리 스핀</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/assets/aistudio/____a1ee531f.webp</image:loc>
+      <image:title>야마토 릴게임 우주전함 파동포 비주얼</image:title>
+      <image:caption>우주전함 파동포 3단 발사 및 우주 함대 교전 연출의 SF 릴게임 명작</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/assets/aistudio/____40241945.webp</image:loc>
+      <image:title>손오공 릴게임 황제손오공 근두운 비행 비주얼</image:title>
+      <image:caption>서유기 황제손오공의 근두운 비행과 황금 여의봉 3단 타격 그래픽</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/assets/aistudio/___2026_10_22_08_27_04_644_9b0ae0ea.png</image:loc>
+      <image:title>정글북 300만 스페셜 자연빵 아케이드 비주얼</image:title>
+      <image:caption>미지의 정글 속 재규어, 거대 아나콘다, 악어 맹수 연타와 100% 리얼 자연빵 시스템</image:caption>
+    </image:image>
   </url>
+
+  <!-- 3. Encyclopedia Section -->
+  <url>
+    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#encyclopedia</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 4. Deep Game Anchor Links -->
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-sea-story</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-yamato</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-sonogong</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-ocean-paradise</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
   </url>
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-gold-castle</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-ocean-paradise</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-yamato</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
+  </url>
+  <url>
+    <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-sonogong</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
   </url>
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#game-jungle-book</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.88</priority>
   </url>
+
+  <!-- 5. Nostalgia Arcade Archive Section -->
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#nostalgia</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+
+  <!-- 6. Legal Guide & Regulatory Section -->
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#legal-guide</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- 7. Editorial Journal Section -->
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#journal</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- 8. About TONG Archive Section -->
   <url>
     <loc>https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/#about</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
 </urlset>

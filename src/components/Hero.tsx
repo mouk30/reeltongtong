@@ -39,8 +39,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
 
           {/* Description */}
           <p className="text-base sm:text-lg text-[#DFE5E4] font-normal leading-relaxed mb-10 max-w-2xl">
-            바다이야기부터 야마토, 손오공까지. 한 시대를 지나온 릴게임의 역사와 문화,
-            그리고 우리가 기억하는 이야기를 사실과 사료에 근거하여 기록합니다.
+            바다이야기부터 황금성, 오션파라다이스, 야마토, 손오공, 정글북 자연빵까지. 한 시대를 지나온 릴게임의 역사와 메커니즘,
+            그리고 우리가 기억하는 오락실 문화를 객관적 사료에 근거하여 기록합니다.
           </p>
 
           {/* Actions */}

@@ -66,7 +66,8 @@ export const GameArchiveSection: React.FC = () => {
           {filteredGames.map((game) => (
             <article
               key={game.id}
-              className="bg-[#0B1523] border border-[#1C2C42] rounded-2xl p-4.5 transition-all duration-300 hover:border-[#395A85] hover:shadow-xl hover:shadow-black/60 flex flex-col justify-between group"
+              id={`game-${game.id}`}
+              className="bg-[#0B1523] border border-[#1C2C42] rounded-2xl p-4.5 transition-all duration-300 hover:border-[#395A85] hover:shadow-xl hover:shadow-black/60 flex flex-col justify-between group scroll-mt-24"
             >
               <div>
                 {/* Top Badge & Live Stats Strip */}
