@@ -1,23 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <!-- Elegant minimalist oceanic mark: Seagull wing soaring above whale fluke wave -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="100%" height="100%">
   <defs>
-    <linearGradient id="tongGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#426E7C"/>
-      <stop offset="60%" stop-color="#102638"/>
-      <stop offset="100%" stop-color="#0B1928"/>
+    <!-- Background Luxury Navy / Deep Ocean Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#142C44"/>
+      <stop offset="55%" stop-color="#0B1A2A"/>
+      <stop offset="100%" stop-color="#050E18"/>
+    </radialGradient>
+
+    <!-- Outer Gold Ring Gradient -->
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE79A"/>
+      <stop offset="25%" stop-color="#FBBF24"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="75%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#92400E"/>
     </linearGradient>
-    <linearGradient id="goldAcc" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E2D4B7"/>
-      <stop offset="100%" stop-color="#C7B38A"/>
+
+    <!-- Golden Seagull Primary Lustre Gradient -->
+    <linearGradient id="goldBody" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FFFDF0"/>
+      <stop offset="20%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
     </linearGradient>
+
+    <!-- Near Wing Main Gradient -->
+    <linearGradient id="goldWingMain" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF5"/>
+      <stop offset="25%" stop-color="#FDE047"/>
+      <stop offset="60%" stop-color="#F59E0B"/>
+      <stop offset="90%" stop-color="#B45309"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+
+    <!-- Far Wing Shadowed Gold Gradient -->
+    <linearGradient id="goldWingFar" x1="10%" y1="10%" x2="90%" y2="90%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="45%" stop-color="#D97706"/>
+      <stop offset="85%" stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+
+    <!-- Ocean Crest Glow Gradient -->
+    <linearGradient id="oceanWaveGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.3"/>
+      <stop offset="40%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#FCD34D" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
 
-  <!-- Soaring Seagull Wing Curve (Top) -->
-  <path d="M18 42 C 34 22, 58 26, 82 18 C 68 32, 50 36, 36 38 C 28 39, 22 41, 18 42 Z" fill="url(#goldAcc)"/>
-  
-  <!-- Whale Fluke & Wave Sweep (Bottom) -->
-  <path d="M12 70 C 26 50, 48 54, 52 46 C 54 42, 50 36, 44 34 C 62 38, 76 54, 88 48 C 80 66, 58 74, 38 72 C 26 71, 18 73, 12 70 Z" fill="url(#tongGrad)"/>
+  <circle cx="96" cy="96" r="92" fill="url(#bgGrad)"/>
+  <circle cx="96" cy="96" r="91" fill="none" stroke="url(#goldRing)" stroke-width="3" stroke-opacity="0.95"/>
+  <circle cx="96" cy="96" r="85" fill="none" stroke="url(#goldRing)" stroke-width="1" stroke-opacity="0.45" stroke-dasharray="3 3"/>
 
-  <!-- Minimal Core Arc connecting harmony -->
-  <path d="M38 52 C 48 46, 56 48, 64 56 C 54 58, 46 56, 38 52 Z" fill="#426E7C" opacity="0.65"/>
+  <path d="M28 142 C 54 130, 78 146, 108 136 C 132 128, 150 134, 164 142 C 150 148, 126 144, 104 150 C 74 158, 48 152, 28 142 Z" 
+        fill="url(#oceanWaveGrad)"/>
+  <path d="M48 150 C 72 142, 92 152, 118 146 C 136 142, 148 145, 156 150 C 142 154, 122 152, 108 156 C 84 162, 64 158, 48 150 Z" 
+        fill="#F59E0B" fill-opacity="0.35"/>
+
+  <g id="golden-seagull-figure">
+    <path d="M92 90 C 74 72, 48 58, 26 56 C 32 64, 44 76, 58 84 C 46 82, 36 78, 30 72 C 36 80, 50 92, 68 96 C 58 96, 50 94, 44 90 C 52 98, 66 106, 84 104 Z" fill="url(#goldWingFar)"/>
+    <path d="M26 56 C 46 60, 68 74, 88 88" stroke="#FFFDF0" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round" fill="none"/>
+
+    <path d="M84 104 C 76 116, 68 128, 54 138 C 66 134, 78 128, 88 120 C 80 132, 74 142, 64 148 C 78 140, 92 130, 98 116 Z" fill="url(#goldWingFar)"/>
+    <path d="M84 104 C 94 114, 108 116, 120 110 C 126 106, 132 100, 136 94 C 134 90, 126 88, 116 88 C 102 88, 92 94, 84 104 Z" fill="url(#goldBody)"/>
+
+    <path d="M96 90 C 112 76, 136 52, 168 34 C 156 46, 142 62, 132 80 C 144 66, 158 54, 172 44 C 160 58, 146 76, 134 94 C 146 80, 158 70, 170 60 C 156 76, 140 98, 122 110 C 106 106, 98 98, 96 90 Z" fill="url(#goldWingMain)" filter="url(#goldGlow)"/>
+    <path d="M102 86 C 122 66, 144 48, 168 34" stroke="#FFFBEB" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M110 92 C 126 76, 146 60, 168 46" stroke="#FFFBEB" stroke-width="1.8" stroke-linecap="round" fill="none" stroke-opacity="0.8"/>
+    <path d="M118 98 C 132 86, 148 74, 164 64" stroke="#FDE047" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-opacity="0.8"/>
+
+    <path d="M116 88 C 124 84, 134 82, 144 80 C 152 79, 160 80, 166 82 C 158 86, 148 88, 140 91 C 134 93, 126 94, 120 94 Z" fill="url(#goldBody)"/>
+    <path d="M158 80 C 166 81, 175 83, 184 85 C 174 88, 166 89, 158 88 Z" fill="#FFE082"/>
+    <path d="M164 83 L 184 85 L 164 86 Z" fill="#FFF8E1"/>
+    <circle cx="148" cy="83.5" r="2.2" fill="#78350F"/>
+    <circle cx="148" cy="83.5" r="1.2" fill="#FEF08A"/>
+    <path d="M136 82 C 144 80, 154 80, 162 82" stroke="#FFFDF0" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M122 96 C 130 94, 134 98, 126 104" stroke="#FFFBEB" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-opacity="0.85"/>
+  </g>
+
+  <path d="M166 22 L 168 28 L 174 30 L 168 32 L 166 38 L 164 32 L 158 30 L 164 28 Z" fill="#FFFDF0"/>
+  <path d="M38 126 L 39.5 130 L 43.5 131.5 L 39.5 133 L 38 137 L 36.5 133 L 32.5 131.5 L 36.5 130 Z" fill="#FDE047"/>
+  <path d="M152 64 L 153 67 L 156 68 L 153 69 L 152 72 L 151 69 L 148 68 L 151 67 Z" fill="#FFFBEB" opacity="0.9"/>
 </svg>

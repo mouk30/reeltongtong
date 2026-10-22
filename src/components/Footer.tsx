@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3">
               <img
                 src="/icons/logo-symbol.svg"
-                alt="릴게임 TONG 갈메기와 고래 엠블럼"
+                alt="릴게임 TONG 황금갈메기 엠블럼"
                 className="w-10 h-10 object-contain"
                 width="40"
                 height="40"

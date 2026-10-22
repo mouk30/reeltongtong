@@ -19,8 +19,8 @@ export function generateOrganizationSchema() {
     "logo": {
       "@type": "ImageObject",
       "@id": `${BASE_URL}/#logo`,
-      "url": `${BASE_URL}/icons/logo-symbol.svg`,
-      "caption": "릴게임 TONG 갈메기와 고래 엠블럼"
+      "url": `${BASE_URL}/icons/golden-seagull.svg`,
+      "caption": "릴게임 TONG 황금갈메기 엠블럼"
     },
     "description": "릴게임의 역사, 기종별 작동 원리, 1990~2000년대 오락실 문화와 게임별 특징을 기록하는 전문 디지털 에디토리얼 아카이브",
     "publishingPrinciples": `${BASE_URL}/#about`,

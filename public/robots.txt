@@ -1,13 +1,26 @@
 # robots.txt for 릴게임 TONG | 갈메기와 고래
 User-agent: *
 Allow: /
+Allow: /favicon.ico
+Allow: /icons/
+Allow: /images/
+Allow: /site.webmanifest
 Disallow: /api/
 Disallow: /admin/
 
-# Googlebot specific settings
+# Googlebot specific settings for search indexing & favicon snippet crawler
 User-agent: Googlebot
 Allow: /
-Allow: /src/assets/images/
+Allow: /favicon.ico
+Allow: /icons/
+Allow: /site.webmanifest
+
+# Googlebot-Image specific settings for search snippet rich icons
+User-agent: Googlebot-Image
+Allow: /
+Allow: /favicon.ico
+Allow: /icons/
+Allow: /images/
 
 # Sitemap location
 Sitemap: https://ais-dev-pm222wdowo43fydrcitexr-266850070721.asia-east1.run.app/sitemap.xml

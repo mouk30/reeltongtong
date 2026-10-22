@@ -86,10 +86,13 @@ export const GameArchiveSection: React.FC = () => {
                   </span>
                 </div>
 
-                {/* Huge Eye-Catching Arcade Art Image */}
-                <div
-                  onClick={() => setActiveGame(game)}
-                  className="relative aspect-square w-full rounded-xl overflow-hidden bg-[#060D17] border border-[#1F334E] cursor-pointer group-hover:border-[#FF9E1B]/60 transition-colors shadow-inner"
+                {/* Huge Eye-Catching Arcade Art Image - Clickable to reelkings.kr */}
+                <a
+                  href={game.siteUrl || "https://reelkings.kr"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative aspect-square w-full rounded-xl overflow-hidden bg-[#060D17] border border-[#1F334E] cursor-pointer group-hover:border-[#FF9E1B] transition-all shadow-inner block"
+                  aria-label={`${game.name} 사이트 바로가기 (reelkings.kr)`}
                 >
                   <img
                     src={game.image}
@@ -97,14 +100,15 @@ export const GameArchiveSection: React.FC = () => {
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-40 group-hover:opacity-20 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-50 group-hover:opacity-30 transition-opacity" />
                   
-                  {/* Subtle Hover overlay prompt */}
-                  <div className="absolute bottom-2.5 right-2.5 bg-black/70 backdrop-blur-xs text-[#FFB020] text-[10px] font-semibold px-2 py-0.5 rounded-sm border border-[#FFB020]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1">
-                    <span>사료 백서 열람</span>
-                    <ExternalLink className="w-2.5 h-2.5" />
+                  {/* Hover overlay badge indicating direct link to reelkings.kr */}
+                  <div className="absolute bottom-2.5 right-2.5 bg-black/80 backdrop-blur-xs text-[#FFB020] text-[11px] font-bold px-2.5 py-1 rounded-md border border-[#FFB020]/40 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all flex items-center gap-1.5 shadow-lg">
+                    <Play className="w-3 h-3 fill-[#FFB020] text-[#FFB020]" />
+                    <span>사이트 바로가기</span>
+                    <ExternalLink className="w-3 h-3 text-[#FFB020]" />
                   </div>
-                </div>
+                </a>
 
                 {/* Title & RTP Badge */}
                 <div className="pt-4 pb-2">

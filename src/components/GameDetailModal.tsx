@@ -36,14 +36,25 @@ export const GameDetailModal: React.FC<GameDetailModalProps> = ({ game, onClose 
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6 text-[#192229]">
           {/* Visual & Core Meta Split */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-            <div className="aspect-4/3 rounded-md overflow-hidden bg-[#102638] border border-[#DFE5E4]">
+            <a
+              href={game.siteUrl || "https://reelkings.kr"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="aspect-4/3 rounded-md overflow-hidden bg-[#102638] border border-[#DFE5E4] block group relative cursor-pointer"
+              aria-label={`${game.name} 사이트 바로가기 (reelkings.kr)`}
+            >
               <img
                 src={game.image}
                 alt={`${game.name} 아케이드 기종 사료 사진`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
-            </div>
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span className="bg-[#FF7A00] text-white text-xs font-bold px-3 py-1.5 rounded-md shadow-md flex items-center gap-1">
+                  사이트 바로가기 ▶
+                </span>
+              </div>
+            </a>
             <div className="space-y-3 text-xs sm:text-sm">
               <div className="p-3 bg-[#F6F5F0] rounded-md border border-[#DFE5E4] space-y-2">
                 <div className="flex items-center gap-2 text-[#426E7C] font-semibold">

@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, activeSection }) =
         >
           <img
             src="/icons/logo-symbol.svg"
-            alt="릴게임 TONG 심벌마크"
+            alt="릴게임 TONG 황금갈메기 엠블럼"
             className="w-9 h-9 object-contain"
             width="36"
             height="36"
