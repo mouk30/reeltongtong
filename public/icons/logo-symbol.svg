@@ -65,6 +65,15 @@
   <path d="M48 150 C 72 142, 92 152, 118 146 C 136 142, 148 145, 156 150 C 142 154, 122 152, 108 156 C 84 162, 64 158, 48 150 Z" 
         fill="#F59E0B" fill-opacity="0.35"/>
 
+  <!-- Whale Motif (대왕고래 유영 & 꼬리 실루엣: 갈메기와 고래 상징 일치) -->
+  <g id="whale-motif">
+    <path d="M36 146 C 44 137, 54 133, 68 134 C 62 141, 52 145, 42 148 Z" fill="#0284C7" fill-opacity="0.8"/>
+    <path d="M52 135 C 54 126, 58 120, 62 116 C 65 113, 69 114, 67 120 C 69 116, 74 114, 77 117 C 75 122, 69 128, 61 134 Z" 
+          fill="url(#goldWingFar)" stroke="#FFFDF0" stroke-width="0.8" stroke-opacity="0.85"/>
+    <circle cx="68" cy="112" r="1.2" fill="#E0F2FE" opacity="0.95"/>
+    <circle cx="72" cy="110" r="0.8" fill="#FDE047" opacity="0.9"/>
+  </g>
+
   <g id="golden-seagull-figure">
     <path d="M92 90 C 74 72, 48 58, 26 56 C 32 64, 44 76, 58 84 C 46 82, 36 78, 30 72 C 36 80, 50 92, 68 96 C 58 96, 50 94, 44 90 C 52 98, 66 106, 84 104 Z" fill="url(#goldWingFar)"/>
     <path d="M26 56 C 46 60, 68 74, 88 88" stroke="#FFFDF0" stroke-width="1.5" stroke-opacity="0.6" stroke-linecap="round" fill="none"/>

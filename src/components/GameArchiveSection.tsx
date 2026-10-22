@@ -170,26 +170,26 @@ export const GameArchiveSection: React.FC = () => {
               </div>
 
               {/* Bottom Action Buttons: Prominent Orange CTA & Secondary Research Button */}
-              <div className="grid grid-cols-2 gap-2.5 pt-3 border-t border-[#16253B]">
+              <div className="grid grid-cols-2 gap-2 sm:gap-2.5 pt-3 border-t border-[#16253B]">
                 {/* Big prominent Orange "사이트 바로가기" Link Button */}
                 <a
                   href={game.siteUrl || "https://reelkings.kr"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 px-3 bg-gradient-to-r from-[#FF7A00] via-[#FF8A00] to-[#FFA800] hover:from-[#FF8A00] hover:to-[#FFB820] text-white font-bold text-xs sm:text-sm rounded-lg transition-all shadow-md shadow-orange-500/30 flex items-center justify-center gap-1.5 cursor-pointer active:scale-98 text-center"
+                  className="w-full py-2.5 sm:py-3 px-1.5 sm:px-3 bg-gradient-to-r from-[#FF7A00] via-[#FF8A00] to-[#FFA800] hover:from-[#FF8A00] hover:to-[#FFB820] text-white font-bold text-[11px] sm:text-xs rounded-lg transition-all shadow-md shadow-orange-500/30 flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer active:scale-98 text-center"
                   aria-label={`${game.name} 사이트 바로가기`}
                 >
-                  <Play className="w-4 h-4 fill-white text-white shrink-0" />
-                  <span className="whitespace-nowrap tracking-wide">사이트 바로가기</span>
+                  <Play className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-white text-white shrink-0" />
+                  <span className="whitespace-nowrap tracking-tight sm:tracking-wide">사이트 바로가기</span>
                 </a>
 
                 {/* Secondary Dark "상세 / 공학" Button */}
                 <button
                   onClick={() => setActiveGame(game)}
-                  className="w-full py-3 px-3 bg-[#132235] hover:bg-[#1A2E47] border border-[#233B5A] text-[#CBD5E1] hover:text-white font-semibold text-xs sm:text-sm rounded-lg transition-colors flex items-center justify-center gap-1.5 cursor-pointer active:scale-98"
+                  className="w-full py-2.5 sm:py-3 px-1.5 sm:px-3 bg-[#132235] hover:bg-[#1A2E47] border border-[#233B5A] text-[#CBD5E1] hover:text-white font-semibold text-[11px] sm:text-xs rounded-lg transition-colors flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer active:scale-98"
                   aria-label={`${game.name} 상세 정보 및 공학 분석`}
                 >
-                  <Info className="w-4 h-4 text-[#38BDF8] shrink-0" />
+                  <Info className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#38BDF8] shrink-0" />
                   <span className="whitespace-nowrap">상세 / 공학</span>
                 </button>
               </div>

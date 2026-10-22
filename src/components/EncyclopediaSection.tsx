@@ -127,8 +127,8 @@ export const EncyclopediaSection: React.FC = () => {
 
         {/* TAB 2: Structured Comparison Table */}
         {activeTab === "comparison" && (
-          <div className="overflow-x-auto bg-white border border-[#DFE5E4] rounded-lg animate-fadeIn">
-            <table className="w-full text-left border-collapse text-sm">
+          <div className="overflow-x-auto bg-white border border-[#DFE5E4] rounded-lg animate-fadeIn shadow-xs">
+            <table className="min-w-[680px] w-full text-left border-collapse text-sm">
               <thead>
                 <tr className="bg-[#102638] text-white">
                   <th className="py-4 px-6 font-semibold text-xs tracking-wider uppercase w-1/4">

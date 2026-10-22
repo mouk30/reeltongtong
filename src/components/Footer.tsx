@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/public/robots.txt" className="hover:text-white transition-colors flex items-center gap-1">
+                <a href="/robots.txt" className="hover:text-white transition-colors flex items-center gap-1">
                   <span>robots.txt</span>
                   <ExternalLink className="w-3 h-3 text-[#426E7C]" />
                 </a>

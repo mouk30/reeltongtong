@@ -31,23 +31,24 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
           </div>
 
           {/* Display Headline with balanced wrap */}
-          <h1 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white leading-[1.18] mb-6 text-balance">
+          <h1 className="font-editorial text-3xl sm:text-5xl md:text-6xl font-medium tracking-tight text-white leading-[1.18] mb-6 text-balance">
             그 시절의 추억,
             <br />
             <span className="text-[#F6F5F0]">릴게임의 모든 이야기</span>
+            <span className="sr-only"> — 릴게임 TONG | 갈메기와 고래 (바다이야기·황금성·오션파라다이스·야마토·손오공·정글북 자연빵)</span>
           </h1>
 
           {/* Description */}
-          <p className="text-base sm:text-lg text-[#DFE5E4] font-normal leading-relaxed mb-10 max-w-2xl">
+          <p className="text-sm sm:text-lg text-[#DFE5E4] font-normal leading-relaxed mb-8 sm:mb-10 max-w-2xl">
             바다이야기부터 황금성, 오션파라다이스, 야마토, 손오공, 정글북 자연빵까지. 한 시대를 지나온 릴게임의 역사와 메커니즘,
             그리고 우리가 기억하는 오락실 문화를 객관적 사료에 근거하여 기록합니다.
           </p>
 
-          {/* Actions */}
-          <div className="flex flex-wrap items-center gap-4">
+          {/* Actions - Stacks neatly on mobile 360/390px, side-by-side on sm+ */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <button
               onClick={onExploreClick}
-              className="px-6 py-3.5 text-sm font-medium text-[#0B1928] bg-[#F6F5F0] hover:bg-white rounded-md transition-all shadow-sm flex items-center gap-2 group cursor-pointer"
+              className="px-6 py-3.5 text-sm font-medium text-[#0B1928] bg-[#F6F5F0] hover:bg-white rounded-md transition-all shadow-sm flex items-center justify-center gap-2 group cursor-pointer text-center"
             >
               <span>릴게임 백과 살펴보기</span>
               <BookOpen className="w-4 h-4 text-[#426E7C] transition-transform group-hover:translate-x-0.5" />
@@ -55,7 +56,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
 
             <a
               href="#games"
-              className="px-6 py-3.5 text-sm font-medium text-[#F6F5F0] bg-[#102638]/80 hover:bg-[#102638] border border-[#426E7C]/40 rounded-md transition-colors flex items-center gap-2"
+              className="px-6 py-3.5 text-sm font-medium text-[#F6F5F0] bg-[#102638]/80 hover:bg-[#102638] border border-[#426E7C]/40 rounded-md transition-colors flex items-center justify-center gap-2 text-center"
             >
               <Compass className="w-4 h-4 text-[#C7B38A]" />
               <span>대표 기종 6선 아카이브</span>

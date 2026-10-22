@@ -36,7 +36,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenSearch, activeSection }) =
           : "bg-[#F6F5F0] border-transparent"
       }`}
     >
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-8">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-6 lg:gap-8">
         {/* Zone 1: Brand Zone - Single element wordmark */}
         <a
           href="#"
