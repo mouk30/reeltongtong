@@ -82,8 +82,8 @@ export default function App() {
 
       {/* Main Content Areas */}
       <main className="flex-1">
-        <Hero onExploreClick={handleScrollToEncyclopedia} />
         <GameArchiveSection />
+        <Hero onExploreClick={handleScrollToEncyclopedia} />
         <FeaturedStory onSelectArticle={(article) => setSelectedArticle(article)} />
         <EncyclopediaSection />
         <NostalgiaSection />

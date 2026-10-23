@@ -27,13 +27,13 @@ export const GameArchiveSection: React.FC = () => {
   });
 
   return (
-    <section id="games" className="py-20 md:py-28 bg-[#07111D] text-white border-b border-[#122234]">
+    <section id="games" className="pt-12 sm:pt-16 pb-20 md:pb-28 bg-[#07111D] text-white border-b border-[#122234]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
           <div className="text-xs uppercase tracking-widest text-[#C7B38A] font-semibold mb-2 flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-[#FF9E1B]" />
-            <span>PILLAR 02 — THE SIX CORE REEL GAMES</span>
+            <span>PILLAR 01 — THE SIX CORE REEL GAMES</span>
           </div>
           <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-medium text-white tracking-tight mb-4">
             게임별 이야기: 시대의 파도를 넘은 6대 기종

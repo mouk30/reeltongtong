@@ -26,7 +26,7 @@ export const EncyclopediaSection: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
           <div className="text-xs uppercase tracking-widest text-[#426E7C] font-semibold mb-2">
-            PILLAR 01 — ENCYCLOPEDIA & MECHANISM
+            PILLAR 02 — ENCYCLOPEDIA & MECHANISM
           </div>
           <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-medium text-[#102638] tracking-tight mb-4">
             릴게임 백과: 정의, 역사, 시스템의 본질
